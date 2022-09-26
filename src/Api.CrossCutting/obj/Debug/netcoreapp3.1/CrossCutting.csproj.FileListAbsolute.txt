@@ -1,0 +1,16 @@
+C:\Projects\Deloitte\CaseApi\src\Api.CrossCutting\bin\Debug\netcoreapp3.1\CrossCutting.deps.json
+C:\Projects\Deloitte\CaseApi\src\Api.CrossCutting\bin\Debug\netcoreapp3.1\CrossCutting.dll
+C:\Projects\Deloitte\CaseApi\src\Api.CrossCutting\bin\Debug\netcoreapp3.1\CrossCutting.pdb
+C:\Projects\Deloitte\CaseApi\src\Api.CrossCutting\obj\Debug\netcoreapp3.1\CrossCutting.csprojAssemblyReference.cache
+C:\Projects\Deloitte\CaseApi\src\Api.CrossCutting\obj\Debug\netcoreapp3.1\CrossCutting.AssemblyInfoInputs.cache
+C:\Projects\Deloitte\CaseApi\src\Api.CrossCutting\obj\Debug\netcoreapp3.1\CrossCutting.AssemblyInfo.cs
+C:\Projects\Deloitte\CaseApi\src\Api.CrossCutting\obj\Debug\netcoreapp3.1\CrossCutting.csproj.CoreCompileInputs.cache
+C:\Projects\Deloitte\CaseApi\src\Api.CrossCutting\obj\Debug\netcoreapp3.1\CrossCutting.dll
+C:\Projects\Deloitte\CaseApi\src\Api.CrossCutting\obj\Debug\netcoreapp3.1\CrossCutting.pdb
+C:\Projects\Deloitte\CaseApi\src\Api.CrossCutting\bin\Debug\netcoreapp3.1\Data.dll
+C:\Projects\Deloitte\CaseApi\src\Api.CrossCutting\bin\Debug\netcoreapp3.1\Domain.dll
+C:\Projects\Deloitte\CaseApi\src\Api.CrossCutting\bin\Debug\netcoreapp3.1\Service.dll
+C:\Projects\Deloitte\CaseApi\src\Api.CrossCutting\bin\Debug\netcoreapp3.1\Domain.pdb
+C:\Projects\Deloitte\CaseApi\src\Api.CrossCutting\bin\Debug\netcoreapp3.1\Service.pdb
+C:\Projects\Deloitte\CaseApi\src\Api.CrossCutting\bin\Debug\netcoreapp3.1\Data.pdb
+C:\Projects\Deloitte\CaseApi\src\Api.CrossCutting\obj\Debug\netcoreapp3.1\CrossCutting.csproj.CopyComplete

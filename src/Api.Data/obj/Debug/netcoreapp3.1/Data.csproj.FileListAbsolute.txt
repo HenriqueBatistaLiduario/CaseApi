@@ -1,0 +1,15 @@
+C:\Projects\Deloitte\CaseApi\src\Api.Data\bin\Debug\netcoreapp3.1\Data.deps.json
+C:\Projects\Deloitte\CaseApi\src\Api.Data\bin\Debug\netcoreapp3.1\Data.dll
+C:\Projects\Deloitte\CaseApi\src\Api.Data\bin\Debug\netcoreapp3.1\Data.pdb
+C:\Projects\Deloitte\CaseApi\src\Api.Data\obj\Debug\netcoreapp3.1\Data.csprojAssemblyReference.cache
+C:\Projects\Deloitte\CaseApi\src\Api.Data\obj\Debug\netcoreapp3.1\Data.AssemblyInfoInputs.cache
+C:\Projects\Deloitte\CaseApi\src\Api.Data\obj\Debug\netcoreapp3.1\Data.AssemblyInfo.cs
+C:\Projects\Deloitte\CaseApi\src\Api.Data\obj\Debug\netcoreapp3.1\Data.csproj.CoreCompileInputs.cache
+C:\Projects\Deloitte\CaseApi\src\Api.Data\obj\Debug\netcoreapp3.1\Data.dll
+C:\Projects\Deloitte\CaseApi\src\Api.Data\obj\Debug\netcoreapp3.1\Data.pdb
+C:\Projects\Deloitte\CaseApi\src\Api.Data\bin\Debug\netcoreapp3.1\Data.runtimeconfig.json
+C:\Projects\Deloitte\CaseApi\src\Api.Data\bin\Debug\netcoreapp3.1\Data.runtimeconfig.dev.json
+C:\Projects\Deloitte\CaseApi\src\Api.Data\obj\Debug\netcoreapp3.1\Data.genruntimeconfig.cache
+C:\Projects\Deloitte\CaseApi\src\Api.Data\bin\Debug\netcoreapp3.1\Domain.dll
+C:\Projects\Deloitte\CaseApi\src\Api.Data\bin\Debug\netcoreapp3.1\Domain.pdb
+C:\Projects\Deloitte\CaseApi\src\Api.Data\obj\Debug\netcoreapp3.1\Data.csproj.CopyComplete
