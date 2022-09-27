@@ -1,14 +1,13 @@
 using System;
 using System.Net;
 using System.Threading.Tasks;
-using Api.Domain.Entities;
 using Api.Domain.Interfaces.Services.User;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Api.Application.Controllers
 {
-    //http://localhost:5000/api/users
-    [Route("api/[controller]")]
+    [Route("api/[controller]")] //http://localhost:5000/api/users
     [ApiController]
     public class UsersController : ControllerBase
     {
@@ -18,6 +17,7 @@ namespace Api.Application.Controllers
             _service = service;
         }
 
+        [Authorize("Bearer")]
         [HttpGet]
         public async Task<ActionResult> GetAll()
         {
@@ -35,6 +35,7 @@ namespace Api.Application.Controllers
             }
         }
 
+        [Authorize("Bearer")]
         [HttpGet]
         [Route("{id}", Name = "GetWithId")] //Rota nomeada para o método Get por Id
         public async Task<ActionResult> Get(Guid GUID)
@@ -46,73 +47,6 @@ namespace Api.Application.Controllers
             try
             {
                 return Ok(await _service.Get(GUID));
-            }
-            catch (ArgumentException e)
-            {
-                return StatusCode((int)HttpStatusCode.InternalServerError, e.Message);
-            }
-        }
-
-        [HttpPost]
-        public async Task<ActionResult> Post([FromBody] UserEntity user)
-        {
-            if (!ModelState.IsValid)
-            {
-                return BadRequest(ModelState);
-            }
-            try
-            {
-                var result = await _service.Post(user);
-                if (result != null)
-                {
-                    return Created(new Uri(Url.Link("GetWithId", new { GUID = result.GUID })), result);
-                }
-                else
-                {
-                    return BadRequest();
-                }
-            }
-            catch (ArgumentException e)
-            {
-                return StatusCode((int)HttpStatusCode.InternalServerError, e.Message);
-            }
-        }
-
-        [HttpPut]
-        public async Task<ActionResult> Put([FromBody] UserEntity user)
-        {
-            if (!ModelState.IsValid)
-            {
-                return BadRequest(ModelState);
-            }
-            try
-            {
-                var result = await _service.Put(user);
-                if (result != null)
-                {
-                    return Ok(result);
-                }
-                else
-                {
-                    return BadRequest();
-                }
-            }
-            catch (ArgumentException e)
-            {
-                return StatusCode((int)HttpStatusCode.InternalServerError, e.Message);
-            }
-        }
-
-        [HttpDelete("{id}")]
-        public async Task<ActionResult> Delete(Guid GUID)
-        {
-            if (!ModelState.IsValid)
-            {
-                return BadRequest(ModelState);
-            }
-            try
-            {
-                return Ok(await _service.Delete(GUID));
             }
             catch (ArgumentException e)
             {

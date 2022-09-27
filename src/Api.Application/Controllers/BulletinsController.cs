@@ -3,12 +3,12 @@ using System.Net;
 using System.Threading.Tasks;
 using Api.Domain.Entities;
 using Api.Domain.Interfaces.Services.Bill;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Api.Application.Controllers
 {
-    //http://localhost:5000/api/bulletins
-    [Route("api/[controller]")]
+    [Route("api/[controller]")] //http://localhost:5000/api/bulletins
     [ApiController]
     public class BulletinsController : ControllerBase
     {
@@ -18,6 +18,7 @@ namespace Api.Application.Controllers
             _service = service;
         }
 
+        [Authorize("Bearer")]
         [HttpGet]
         public async Task<ActionResult> GetAll()
         {
@@ -36,7 +37,7 @@ namespace Api.Application.Controllers
         }
 
         [HttpGet]
-        [Route("{id}", Name = "BulletinsGetWithId")] //Rota nomeada para o método Get por Id
+        [Route("{guid}", Name = "BulletinsGetWithIdStudent")] //Rota nomeada para o método Get por Id
         public async Task<ActionResult> Get(Guid GUID)
         {
             if (!ModelState.IsValid)
@@ -65,7 +66,7 @@ namespace Api.Application.Controllers
                 var result = await _service.Post(bulletins);
                 if (result != null)
                 {
-                    return Created(new Uri(Url.Link("BulletinsGetWithId", new { GUID = result.GUID })), result);
+                    return Created(new Uri(Url.Link("BulletinsGetWithIdStudent", new { GUID = result.GUID })), result);
                 }
                 else
                 {

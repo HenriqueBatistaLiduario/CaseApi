@@ -18,12 +18,13 @@ namespace Data.Migrations
                     CURGUID = table.Column<string>(nullable: false),
                     SBJGUID = table.Column<string>(nullable: false),
                     BLTPERIOD = table.Column<string>(nullable: false),
-                    BLTEVALACTIVITY1 = table.Column<string>(nullable: true, defaultValue: "0"),
-                    BLTEVALACTIVITY2 = table.Column<string>(nullable: true, defaultValue: "0"),
-                    BLTEVALACTIVITY3 = table.Column<string>(nullable: true, defaultValue: "0"),
-                    BLTEVALACTIVITYEND = table.Column<string>(nullable: true, defaultValue: "0"),
+                    BLTTYPE = table.Column<int>(nullable: false),
+                    BLTEVALACTIVITY1 = table.Column<float>(nullable: false, defaultValue: 0f),
+                    BLTEVALACTIVITY2 = table.Column<float>(nullable: false, defaultValue: 0f),
+                    BLTEVALACTIVITY3 = table.Column<float>(nullable: false, defaultValue: 0f),
+                    BLTEVALACTIVITYEND = table.Column<float>(nullable: false, defaultValue: 0f),
                     BLTSTATUS = table.Column<int>(nullable: false, defaultValue: 0),
-                    BLTCOUNTRRP = table.Column<int>(nullable: false, defaultValue: 0)
+                    BLTDELIVERYDATE = table.Column<DateTime>(nullable: false)
                 },
                 constraints: table =>
                 {

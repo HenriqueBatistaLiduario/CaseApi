@@ -9,8 +9,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Data.Migrations
 {
     [DbContext(typeof(MyContext))]
-    [Migration("20220926161954_MigrationV1")]
-    partial class MigrationV1
+    [Migration("20220927031932_MigrationV2")]
+    partial class MigrationV2
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -25,30 +25,28 @@ namespace Data.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("char(36)");
 
-                    b.Property<int>("BLTCOUNTRRP")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int")
-                        .HasDefaultValue(0);
+                    b.Property<DateTime>("BLTDELIVERYDATE")
+                        .HasColumnType("datetime(6)");
 
-                    b.Property<string>("BLTEVALACTIVITY1")
+                    b.Property<float>("BLTEVALACTIVITY1")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("longtext CHARACTER SET utf8mb4")
-                        .HasDefaultValue("0");
+                        .HasColumnType("float")
+                        .HasDefaultValue(0f);
 
-                    b.Property<string>("BLTEVALACTIVITY2")
+                    b.Property<float>("BLTEVALACTIVITY2")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("longtext CHARACTER SET utf8mb4")
-                        .HasDefaultValue("0");
+                        .HasColumnType("float")
+                        .HasDefaultValue(0f);
 
-                    b.Property<string>("BLTEVALACTIVITY3")
+                    b.Property<float>("BLTEVALACTIVITY3")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("longtext CHARACTER SET utf8mb4")
-                        .HasDefaultValue("0");
+                        .HasColumnType("float")
+                        .HasDefaultValue(0f);
 
-                    b.Property<string>("BLTEVALACTIVITYEND")
+                    b.Property<float>("BLTEVALACTIVITYEND")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("longtext CHARACTER SET utf8mb4")
-                        .HasDefaultValue("0");
+                        .HasColumnType("float")
+                        .HasDefaultValue(0f);
 
                     b.Property<string>("BLTPERIOD")
                         .IsRequired()
@@ -59,6 +57,9 @@ namespace Data.Migrations
                         .HasColumnType("int")
                         .HasDefaultValue(0);
 
+                    b.Property<int>("BLTTYPE")
+                        .HasColumnType("int");
+
                     b.Property<DateTime?>("CREATEDON")
                         .HasColumnType("datetime(6)");
 
@@ -66,11 +67,27 @@ namespace Data.Migrations
                         .IsRequired()
                         .HasColumnType("longtext CHARACTER SET utf8mb4");
 
+                    b.Property<string>("CURNAME")
+                        .IsRequired()
+                        .HasColumnType("longtext CHARACTER SET utf8mb4");
+
                     b.Property<string>("SBJGUID")
                         .IsRequired()
                         .HasColumnType("longtext CHARACTER SET utf8mb4");
 
+                    b.Property<string>("SBJNAME")
+                        .IsRequired()
+                        .HasColumnType("longtext CHARACTER SET utf8mb4");
+
+                    b.Property<string>("STDFULLNAME")
+                        .IsRequired()
+                        .HasColumnType("longtext CHARACTER SET utf8mb4");
+
                     b.Property<string>("STDGUID")
+                        .IsRequired()
+                        .HasColumnType("longtext CHARACTER SET utf8mb4");
+
+                    b.Property<string>("STDREGISTRATION")
                         .IsRequired()
                         .HasColumnType("longtext CHARACTER SET utf8mb4");
 

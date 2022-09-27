@@ -1,6 +1,10 @@
 using Api.Domain.Entities;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
+using System;
+using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
+
 
 namespace Api.Data.Mapping
 {
@@ -19,7 +23,7 @@ namespace Api.Data.Mapping
             builder.Property(STD => STD.STDDOCTYPE).HasMaxLength(32); //Tipo de Documento de Identificação (RG, CPF, CNH, etc)
             builder.Property(STD => STD.STDDOCID).HasMaxLength(32); //Documento de Identificação
             builder.Property(STD => STD.STDEMAIL).IsRequired().HasMaxLength(100); // E-mail do aluno
-            builder.Property(STD => STD.STDPHONE).HasMaxLength(32); //Telefone do aluno
+            builder.Property(STD => STD.STDPHONE).HasMaxLength(32); //Telefone do aluno            
             builder.Property(STD => STD.STDBIRTHDATE).IsRequired(); //Data de Nascimento           
 
             //Indexes
