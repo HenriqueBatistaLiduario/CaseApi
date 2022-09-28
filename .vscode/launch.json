@@ -24,8 +24,8 @@
                 "DB_CONNECTION": "Persist Security Info=True;Server=localhost;Port=3306;Database=dbapi;Uid=root;Pwd=Mudar@123",
                 "DATABASE": "MYSQL",
                 "MIGRATION": "APLICAR",
-                "Audience": "LocalAudience",
-                "Issuer": "LocalIssuer",
+                "Audience": "DeloitteAudience",
+                "Issuer": "DeloitteIssuer",
                 "Seconds": "28800"
             },
             "sourceFileMap": {

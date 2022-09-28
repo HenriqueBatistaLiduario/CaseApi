@@ -85,18 +85,18 @@ namespace Application
                 {
                     Version = "v1",
                     Title = "Deloitte. | Processo seletivo - Case de Henrique Batista",
-                    Description = "API Rest utilizando o Framework .Net 5.0 (C#), considerando os requisitos solicitados pela Deloitte ao candidato.",
+                    Description = "API Rest utilizando o Framework .NET 5.0 (C#), considerando os requisitos solicitados pela Deloitte ao candidato.",
                     TermsOfService = new Uri("http://github.com"),
                     Contact = new Microsoft.OpenApi.Models.OpenApiContact
                     {
                         Name = "Henrique Batista Liduario",
                         Email = "henrique.liduario@hotmail.com",
-                        Url = new Uri("https://linked.in"),
+                        Url = new Uri("www.linkedin.com/in/henriqueliduario"),
                     },
                     License = new Microsoft.OpenApi.Models.OpenApiLicense
                     {
-                        Name = "Deloitte - Termo de consentimento de uso de dados pessoais",
-                        Url = new Uri("https://deloitte.com")
+                        Name = "Projeto compartilhado no GitHub",
+                        Url = new Uri("https://github.com/HenriqueBatistaLiduario/CaseApi")
                     }
 
                 });

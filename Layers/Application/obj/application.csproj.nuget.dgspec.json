@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Projects\\Deloitte\\Api\\Layers\\application\\Application.csproj": {}
+    "C:\\Projects\\Deloitte\\Api\\Layers\\Application\\Application.csproj": {}
   },
   "projects": {
-    "C:\\Projects\\Deloitte\\Api\\Layers\\application\\Application.csproj": {
+    "C:\\Projects\\Deloitte\\Api\\Layers\\Application\\Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Projects\\Deloitte\\Api\\Layers\\application\\Application.csproj",
+        "projectUniqueName": "C:\\Projects\\Deloitte\\Api\\Layers\\Application\\Application.csproj",
         "projectName": "Application",
-        "projectPath": "C:\\Projects\\Deloitte\\Api\\Layers\\application\\Application.csproj",
+        "projectPath": "C:\\Projects\\Deloitte\\Api\\Layers\\Application\\Application.csproj",
         "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "C:\\Projects\\Deloitte\\Api\\Layers\\application\\obj\\",
+        "outputPath": "C:\\Projects\\Deloitte\\Api\\Layers\\Application\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
