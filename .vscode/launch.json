@@ -10,9 +10,9 @@
             "request": "launch",
             "preLaunchTask": "build",
             // If you have changed target frameworks, make sure to update the program path.
-            "program": "${workspaceFolder}/Api/src/Application/bin/Debug/netcoreapp3.1/Application.dll",
+            "program": "${workspaceFolder}/Api/Layers/Application/bin/Debug/net5.0/Application.dll",
             "args": [],
-            "cwd": "${workspaceFolder}/Api/src/Application",
+            "cwd": "${workspaceFolder}/Api/Layers/Application",
             "stopAtEntry": false,
             // Enable launching a web browser when ASP.NET Core starts. For more information: https://aka.ms/VSCode-CS-LaunchJson-WebBrowser
             "serverReadyAction": {
@@ -20,7 +20,13 @@
                 "pattern": "\\bNow listening on:\\s+(https?://\\S+)"
             },
             "env": {
-                "ASPNETCORE_ENVIRONMENT": "Development"
+                "ASPNETCORE_ENVIRONMENT": "Development",
+                "DB_CONNECTION": "Persist Security Info=True;Server=localhost;Port=3306;Database=dbapi;Uid=root;Pwd=Mudar@123",
+                "DATABASE": "MYSQL",
+                "MIGRATION": "APLICAR",
+                "Audience": "LocalAudience",
+                "Issuer": "LocalIssuer",
+                "Seconds": "28800"
             },
             "sourceFileMap": {
                 "/Views": "${workspaceFolder}/Views"

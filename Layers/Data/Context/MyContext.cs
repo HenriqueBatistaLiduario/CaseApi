@@ -30,6 +30,10 @@ namespace Data.Context
             modelBuilder.Entity<StudentEntity>(new StudentMap().Configure);
             modelBuilder.Entity<ProfileEntity>(new ProfileMap().Configure);
 
+            //Chamada ao processamento dos seeds...
+            CourseSeeds.Courses(modelBuilder);
+            ProfileSeeds.Profiles(modelBuilder);
+
             modelBuilder.Entity<UserEntity>().HasData(
                 new UserEntity
                 {
@@ -38,12 +42,9 @@ namespace Data.Context
                     USEREMAIL = "ntt.hbatistl@gmail.com",
                     CREATEDON = DateTime.Now,
                     UPDATEDON = DateTime.Now,
+                    ProfileGUID = new Guid("0bd34160-38f5-4bac-9378-4adc936ce6eb")
                 }
             );
-
-            //Chamada ao processamento dos seeds...
-            CourseSeeds.Courses(modelBuilder);
         }
-
     }
 }

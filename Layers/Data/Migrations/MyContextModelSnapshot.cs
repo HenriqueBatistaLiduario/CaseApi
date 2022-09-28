@@ -14,8 +14,8 @@ namespace Data.Migrations
         {
 #pragma warning disable 612, 618
             modelBuilder
-                .HasAnnotation("ProductVersion", "3.1.6")
-                .HasAnnotation("Relational:MaxIdentifierLength", 64);
+                .HasAnnotation("Relational:MaxIdentifierLength", 64)
+                .HasAnnotation("ProductVersion", "5.0.3");
 
             modelBuilder.Entity("Domain.Entities.BillEntity", b =>
                 {
@@ -48,7 +48,7 @@ namespace Data.Migrations
 
                     b.Property<string>("BLTPERIOD")
                         .IsRequired()
-                        .HasColumnType("longtext CHARACTER SET utf8mb4");
+                        .HasColumnType("longtext");
 
                     b.Property<int>("BLTSTATUS")
                         .ValueGeneratedOnAdd()
@@ -63,34 +63,34 @@ namespace Data.Migrations
 
                     b.Property<string>("CURGUID")
                         .IsRequired()
-                        .HasColumnType("longtext CHARACTER SET utf8mb4");
+                        .HasColumnType("longtext");
 
                     b.Property<string>("CURNAME")
                         .IsRequired()
-                        .HasColumnType("longtext CHARACTER SET utf8mb4");
+                        .HasColumnType("longtext");
 
                     b.Property<Guid>("CourseGUID")
                         .HasColumnType("char(36)");
 
                     b.Property<string>("SBJGUID")
                         .IsRequired()
-                        .HasColumnType("longtext CHARACTER SET utf8mb4");
+                        .HasColumnType("longtext");
 
                     b.Property<string>("SBJNAME")
                         .IsRequired()
-                        .HasColumnType("longtext CHARACTER SET utf8mb4");
+                        .HasColumnType("longtext");
 
                     b.Property<string>("STDFULLNAME")
                         .IsRequired()
-                        .HasColumnType("longtext CHARACTER SET utf8mb4");
+                        .HasColumnType("longtext");
 
                     b.Property<string>("STDGUID")
                         .IsRequired()
-                        .HasColumnType("longtext CHARACTER SET utf8mb4");
+                        .HasColumnType("longtext");
 
                     b.Property<string>("STDREGISTRATION")
                         .IsRequired()
-                        .HasColumnType("longtext CHARACTER SET utf8mb4");
+                        .HasColumnType("longtext");
 
                     b.Property<Guid>("StudentGUID")
                         .HasColumnType("char(36)");
@@ -105,8 +105,7 @@ namespace Data.Migrations
 
                     b.HasIndex("CourseGUID");
 
-                    b.HasIndex("StudentGUID")
-                        .IsUnique();
+                    b.HasIndex("StudentGUID");
 
                     b.HasIndex("SubjectGUID");
 
@@ -127,8 +126,8 @@ namespace Data.Migrations
 
                     b.Property<string>("CURNAME")
                         .IsRequired()
-                        .HasColumnType("varchar(255) CHARACTER SET utf8mb4")
-                        .HasMaxLength(255);
+                        .HasMaxLength(255)
+                        .HasColumnType("varchar(255)");
 
                     b.Property<int>("CUROFFERABLE")
                         .HasColumnType("int");
@@ -156,7 +155,7 @@ namespace Data.Migrations
                         new
                         {
                             GUID = new Guid("f6ed78e4-e6bc-476b-bbf7-699cc0c86456"),
-                            CREATEDON = new DateTime(2022, 9, 28, 1, 3, 28, 606, DateTimeKind.Utc).AddTicks(6739),
+                            CREATEDON = new DateTime(2022, 9, 28, 5, 2, 57, 147, DateTimeKind.Utc).AddTicks(252),
                             CURMODALITY = 1,
                             CURNAME = "MBA Executivo em Segurança Cibernética",
                             CUROFFERABLE = 0,
@@ -168,7 +167,7 @@ namespace Data.Migrations
                         new
                         {
                             GUID = new Guid("994f7446-4541-4ba0-8021-1a6d369c611d"),
-                            CREATEDON = new DateTime(2022, 9, 28, 1, 3, 28, 606, DateTimeKind.Utc).AddTicks(6906),
+                            CREATEDON = new DateTime(2022, 9, 28, 5, 2, 57, 147, DateTimeKind.Utc).AddTicks(1727),
                             CURMODALITY = 1,
                             CURNAME = "Analista de Comportamento e de Carreiras",
                             CUROFFERABLE = 0,
@@ -180,7 +179,7 @@ namespace Data.Migrations
                         new
                         {
                             GUID = new Guid("0780ac95-4bf4-4d35-b4f3-0152b0d7d32a"),
-                            CREATEDON = new DateTime(2022, 9, 28, 1, 3, 28, 606, DateTimeKind.Utc).AddTicks(6915),
+                            CREATEDON = new DateTime(2022, 9, 28, 5, 2, 57, 147, DateTimeKind.Utc).AddTicks(1735),
                             CURMODALITY = 1,
                             CURNAME = "Analista em Inteligência Emocional",
                             CUROFFERABLE = 0,
@@ -192,7 +191,7 @@ namespace Data.Migrations
                         new
                         {
                             GUID = new Guid("32b573d5-ce0b-48ae-bc2b-8fff78743a62"),
-                            CREATEDON = new DateTime(2022, 9, 28, 1, 3, 28, 606, DateTimeKind.Utc).AddTicks(6920),
+                            CREATEDON = new DateTime(2022, 9, 28, 5, 2, 57, 147, DateTimeKind.Utc).AddTicks(1740),
                             CURMODALITY = 1,
                             CURNAME = "Auditoria Pública",
                             CUROFFERABLE = 0,
@@ -204,7 +203,7 @@ namespace Data.Migrations
                         new
                         {
                             GUID = new Guid("ef069aa1-0ce9-4041-8c9a-3e866ed78f51"),
-                            CREATEDON = new DateTime(2022, 9, 28, 1, 3, 28, 606, DateTimeKind.Utc).AddTicks(6926),
+                            CREATEDON = new DateTime(2022, 9, 28, 5, 2, 57, 147, DateTimeKind.Utc).AddTicks(1745),
                             CURMODALITY = 1,
                             CURNAME = "Educação Bilíngue",
                             CUROFFERABLE = 0,
@@ -226,18 +225,18 @@ namespace Data.Migrations
 
                     b.Property<string>("PFLALIAS")
                         .IsRequired()
-                        .HasColumnType("varchar(10) CHARACTER SET utf8mb4")
-                        .HasMaxLength(10);
+                        .HasMaxLength(10)
+                        .HasColumnType("varchar(10)");
 
                     b.Property<string>("PFLASSIGNMENTS")
                         .IsRequired()
-                        .HasColumnType("varchar(255) CHARACTER SET utf8mb4")
-                        .HasMaxLength(255);
+                        .HasMaxLength(255)
+                        .HasColumnType("varchar(255)");
 
                     b.Property<string>("PFLTITLE")
                         .IsRequired()
-                        .HasColumnType("varchar(100) CHARACTER SET utf8mb4")
-                        .HasMaxLength(100);
+                        .HasMaxLength(100)
+                        .HasColumnType("varchar(100)");
 
                     b.Property<DateTime?>("UPDATEDON")
                         .HasColumnType("datetime(6)");
@@ -248,6 +247,40 @@ namespace Data.Migrations
                         .IsUnique();
 
                     b.ToTable("profiles");
+
+                    b.HasData(
+                        new
+                        {
+                            GUID = new Guid("0bd34160-38f5-4bac-9378-4adc936ce6eb"),
+                            CREATEDON = new DateTime(2022, 9, 28, 5, 2, 57, 148, DateTimeKind.Utc).AddTicks(7003),
+                            PFLALIAS = "ADM",
+                            PFLASSIGNMENTS = "RegisterCourse;ConsultCourseList;RegisterSubject;ManageCurriculum;ConsultCurriculumByCourse;RegisterStudent;ConsultListStudentsByCourse;PostNotes;ConsultBulletin",
+                            PFLTITLE = "Administrador do sistema"
+                        },
+                        new
+                        {
+                            GUID = new Guid("d159d7e8-69cb-48b4-9f00-43d3aa290717"),
+                            CREATEDON = new DateTime(2022, 9, 28, 5, 2, 57, 148, DateTimeKind.Utc).AddTicks(7018),
+                            PFLALIAS = "SAA",
+                            PFLASSIGNMENTS = "RegisterCourse;ConsultCourseList;RegisterSubject;ManageCurriculum;ConsultCurriculumByCourse;RegisterStudent;ConsultListStudentsByCourse;",
+                            PFLTITLE = "Secretaria Acadêmica"
+                        },
+                        new
+                        {
+                            GUID = new Guid("8bde56dc-1f68-4b88-9a74-39551ed13bf3"),
+                            CREATEDON = new DateTime(2022, 9, 28, 5, 2, 57, 148, DateTimeKind.Utc).AddTicks(7024),
+                            PFLALIAS = "TUT",
+                            PFLASSIGNMENTS = "ConsultCourseList;ConsultCurriculumByCourse;ConsultListStudentsByCourse;PostNotes;",
+                            PFLTITLE = "Tutor"
+                        },
+                        new
+                        {
+                            GUID = new Guid("4f974a4c-6a91-44f5-ad56-9ab3b2f18903"),
+                            CREATEDON = new DateTime(2022, 9, 28, 5, 2, 57, 148, DateTimeKind.Utc).AddTicks(7029),
+                            PFLALIAS = "STD",
+                            PFLASSIGNMENTS = "ConsultCourseList;ConsultCurriculumByCourse;RegisterStudent;ConsultBulletin;",
+                            PFLTITLE = "Estudante/Aluno"
+                        });
                 });
 
             modelBuilder.Entity("Domain.Entities.StudentEntity", b =>
@@ -263,36 +296,36 @@ namespace Data.Migrations
                         .HasColumnType("datetime(6)");
 
                     b.Property<string>("STDDOCID")
-                        .HasColumnType("varchar(32) CHARACTER SET utf8mb4")
-                        .HasMaxLength(32);
+                        .HasMaxLength(32)
+                        .HasColumnType("varchar(32)");
 
                     b.Property<string>("STDDOCTYPE")
-                        .HasColumnType("varchar(32) CHARACTER SET utf8mb4")
-                        .HasMaxLength(32);
+                        .HasMaxLength(32)
+                        .HasColumnType("varchar(32)");
 
                     b.Property<string>("STDEMAIL")
                         .IsRequired()
-                        .HasColumnType("varchar(100) CHARACTER SET utf8mb4")
-                        .HasMaxLength(100);
+                        .HasMaxLength(100)
+                        .HasColumnType("varchar(100)");
 
                     b.Property<string>("STDFULLNAME")
                         .IsRequired()
-                        .HasColumnType("varchar(255) CHARACTER SET utf8mb4")
-                        .HasMaxLength(255);
+                        .HasMaxLength(255)
+                        .HasColumnType("varchar(255)");
 
                     b.Property<string>("STDPHONE")
-                        .HasColumnType("varchar(32) CHARACTER SET utf8mb4")
-                        .HasMaxLength(32);
+                        .HasMaxLength(32)
+                        .HasColumnType("varchar(32)");
 
                     b.Property<string>("STDREGISTRATION")
                         .IsRequired()
-                        .HasColumnType("varchar(32) CHARACTER SET utf8mb4")
-                        .HasMaxLength(32);
+                        .HasMaxLength(32)
+                        .HasColumnType("varchar(32)");
 
                     b.Property<string>("STDSOCIALNAME")
                         .IsRequired()
-                        .HasColumnType("varchar(255) CHARACTER SET utf8mb4")
-                        .HasMaxLength(255);
+                        .HasMaxLength(255)
+                        .HasColumnType("varchar(255)");
 
                     b.Property<DateTime?>("UPDATEDON")
                         .HasColumnType("datetime(6)");
@@ -317,42 +350,42 @@ namespace Data.Migrations
                     b.Property<DateTime?>("CREATEDON")
                         .HasColumnType("datetime(6)");
 
-                    b.Property<Guid?>("CoursesGUID")
+                    b.Property<Guid?>("CourseEntityGUID")
                         .HasColumnType("char(36)");
 
                     b.Property<string>("SBJMODALITY")
                         .IsRequired()
-                        .HasColumnType("longtext CHARACTER SET utf8mb4");
+                        .HasColumnType("longtext");
 
                     b.Property<string>("SBJNAME")
                         .IsRequired()
-                        .HasColumnType("varchar(255) CHARACTER SET utf8mb4")
-                        .HasMaxLength(255);
+                        .HasMaxLength(255)
+                        .HasColumnType("varchar(255)");
 
                     b.Property<string>("SBJOFFERABLE")
                         .IsRequired()
-                        .HasColumnType("longtext CHARACTER SET utf8mb4");
+                        .HasColumnType("longtext");
 
                     b.Property<DateTime>("SBJOFFERABLESYNCE")
                         .HasColumnType("datetime(6)");
 
                     b.Property<string>("SBJSUBTYPE")
-                        .HasColumnType("longtext CHARACTER SET utf8mb4");
+                        .HasColumnType("longtext");
 
                     b.Property<string>("SBJTYPE")
                         .IsRequired()
-                        .HasColumnType("longtext CHARACTER SET utf8mb4");
+                        .HasColumnType("longtext");
 
                     b.Property<string>("SBJWORKLOAD")
                         .IsRequired()
-                        .HasColumnType("longtext CHARACTER SET utf8mb4");
+                        .HasColumnType("longtext");
 
                     b.Property<DateTime?>("UPDATEDON")
                         .HasColumnType("datetime(6)");
 
                     b.HasKey("GUID");
 
-                    b.HasIndex("CoursesGUID");
+                    b.HasIndex("CourseEntityGUID");
 
                     b.ToTable("subjects");
                 });
@@ -374,13 +407,13 @@ namespace Data.Migrations
 
                     b.Property<string>("USEREMAIL")
                         .IsRequired()
-                        .HasColumnType("varchar(100) CHARACTER SET utf8mb4")
-                        .HasMaxLength(100);
+                        .HasMaxLength(100)
+                        .HasColumnType("varchar(100)");
 
                     b.Property<string>("USERNAME")
                         .IsRequired()
-                        .HasColumnType("varchar(100) CHARACTER SET utf8mb4")
-                        .HasMaxLength(100);
+                        .HasMaxLength(100)
+                        .HasColumnType("varchar(100)");
 
                     b.HasKey("GUID");
 
@@ -394,10 +427,10 @@ namespace Data.Migrations
                     b.HasData(
                         new
                         {
-                            GUID = new Guid("f8dd8462-9fdd-4c1c-a885-ee0493e84887"),
-                            CREATEDON = new DateTime(2022, 9, 27, 18, 3, 28, 601, DateTimeKind.Local).AddTicks(6269),
-                            ProfileGUID = new Guid("00000000-0000-0000-0000-000000000000"),
-                            UPDATEDON = new DateTime(2022, 9, 27, 18, 3, 28, 604, DateTimeKind.Local).AddTicks(7515),
+                            GUID = new Guid("d6cfa752-1c3e-4c86-8050-b1731e439f83"),
+                            CREATEDON = new DateTime(2022, 9, 27, 22, 2, 57, 148, DateTimeKind.Local).AddTicks(8111),
+                            ProfileGUID = new Guid("0bd34160-38f5-4bac-9378-4adc936ce6eb"),
+                            UPDATEDON = new DateTime(2022, 9, 27, 22, 2, 57, 151, DateTimeKind.Local).AddTicks(4094),
                             USEREMAIL = "ntt.hbatistl@gmail.com",
                             USERNAME = "Administrador"
                         });
@@ -412,8 +445,8 @@ namespace Data.Migrations
                         .IsRequired();
 
                     b.HasOne("Domain.Entities.StudentEntity", "Student")
-                        .WithOne("Bills")
-                        .HasForeignKey("Domain.Entities.BillEntity", "StudentGUID")
+                        .WithMany("Bills")
+                        .HasForeignKey("StudentGUID")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
@@ -422,13 +455,19 @@ namespace Data.Migrations
                         .HasForeignKey("SubjectGUID")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
+
+                    b.Navigation("Course");
+
+                    b.Navigation("Student");
+
+                    b.Navigation("Subject");
                 });
 
             modelBuilder.Entity("Domain.Entities.SubjectEntity", b =>
                 {
-                    b.HasOne("Domain.Entities.CourseEntity", "Courses")
+                    b.HasOne("Domain.Entities.CourseEntity", null)
                         .WithMany("Subjects")
-                        .HasForeignKey("CoursesGUID");
+                        .HasForeignKey("CourseEntityGUID");
                 });
 
             modelBuilder.Entity("Domain.Entities.UserEntity", b =>
@@ -438,6 +477,23 @@ namespace Data.Migrations
                         .HasForeignKey("ProfileGUID")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
+
+                    b.Navigation("Profile");
+                });
+
+            modelBuilder.Entity("Domain.Entities.CourseEntity", b =>
+                {
+                    b.Navigation("Subjects");
+                });
+
+            modelBuilder.Entity("Domain.Entities.ProfileEntity", b =>
+                {
+                    b.Navigation("Users");
+                });
+
+            modelBuilder.Entity("Domain.Entities.StudentEntity", b =>
+                {
+                    b.Navigation("Bills");
                 });
 #pragma warning restore 612, 618
         }

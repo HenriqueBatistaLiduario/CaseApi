@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 
 namespace Domain.Entities
 {
@@ -12,7 +13,7 @@ namespace Domain.Entities
         public string STDEMAIL { get; set; } // E-mail do aluno
         public string STDPHONE { get; set; } // Telefone do aluno
         public DateTime STDBIRTHDATE { get; set; } //Data de Nascimento
-        public BillEntity Bills { get; set; } //Um aluno pode ter MUITOS boletins
+        public IEnumerable<BillEntity> Bills { get; set; } //UM curso pode possuir MUITAS disciplinas
 
     }
 }

@@ -16,25 +16,31 @@ namespace Application
 {
     public class Startup
     {
-        public Startup(IConfiguration configuration)
+        public Startup(IConfiguration configuration, IWebHostEnvironment environment)
         {
             Configuration = configuration;
+            _environment = environment;
         }
 
         public IConfiguration Configuration { get; }
+        public IWebHostEnvironment _environment { get; }
 
         // Isso define o ambiente da aplicação, por exemplo Dev, QA/Stage, Prod. É considerado uma boa prática definir nas variáveis de ambiente. 
         // Aqui no VSCode a definição do ambiente como Development fica em .vscode/launch.json, e as variáveis estão no appsettings.json da camada Application
-        // Environment.SetEnvironmentVariable("DB_CONNECTION", "COLOCAR STRING DE CONEXAO");
-        // Environment.SetEnvironmentVariable("DATABASE", "MYSQL");
-        // Environment.SetEnvironmentVariable("MIGRATION", "APLICAR");
-        // Environment.SetEnvironmentVariable("Audience", "ApiAudience");
-        // Environment.SetEnvironmentVariable("Issuer", "ApiIssuer");
-        // Environment.SetEnvironmentVariable("Seconds", "28800");
 
         // Método chamado pelo tempo de execução para adicionar serviços ao contêiner.
         public void ConfigureServices(IServiceCollection services)
         {
+            if (_environment.IsEnvironment("Development"))
+            {
+                Environment.SetEnvironmentVariable("DB_CONNECTION", "Persist Security Info=True;Server=localhost;Port=3306;DataBase=dbapi;Uid=root;Pwd=Mudar@123");
+                Environment.SetEnvironmentVariable("DATABASE", "MYSQL");
+                Environment.SetEnvironmentVariable("MIGRATION", "APLICAR");
+                Environment.SetEnvironmentVariable("Audience", "DeloitteAudience");
+                Environment.SetEnvironmentVariable("Issuer", "DeloitteIssuer");
+                Environment.SetEnvironmentVariable("Seconds", "28800");
+            }
+
             ConfigureService.ConfigureDependenciesService(services);
             ConfigureRepository.ConfigureDependenciesRepository(services);
 
@@ -54,8 +60,8 @@ namespace Application
                 var paramsValidation = bearerOptions.TokenValidationParameters;
 
                 paramsValidation.IssuerSigningKey = signingConfigurations.Key;
-                paramsValidation.ValidAudience = tokenConfigurations.Audience;
-                paramsValidation.ValidIssuer = tokenConfigurations.Issuer;
+                paramsValidation.ValidAudience = Environment.GetEnvironmentVariable("Audience");
+                paramsValidation.ValidIssuer = Environment.GetEnvironmentVariable("Issuer");
                 paramsValidation.ValidateIssuerSigningKey = true;  // Valida a assinatura de um token recebido                
                 paramsValidation.ValidateLifetime = true; // Verifica se um token recebido não está expirado.
                 // Tempo de tolerância para a expiração de um token (utilizado caso haja problemas de sincronismo de horário entre diferentes

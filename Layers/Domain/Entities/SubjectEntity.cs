@@ -1,4 +1,5 @@
 using System;
+using System.ComponentModel.DataAnnotations;
 
 namespace Domain.Entities
 {
@@ -11,6 +12,5 @@ namespace Domain.Entities
         public string SBJWORKLOAD { get; set; } //Carga horária da disciplina
         public string SBJOFFERABLE { get; set; } //OFERTÁVEL? {1=SIM, 2=NÃO} - Chave para ativar/desativar novas ofertas da disciplina na montagem de cursos.
         public DateTime SBJOFFERABLESYNCE { get; set; } //OFERTÁVEL DESDE - Data de ativação/desativação da oferta dessa disciplina        
-        public CourseEntity Courses { get; set; } //Uma disciplina pode estar presente em MUITOS cursos.
     }
 }
