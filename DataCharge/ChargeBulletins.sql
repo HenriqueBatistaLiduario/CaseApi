@@ -1,13 +1,157 @@
-INSERT INTO dbcaseapi.bulletins(GUID,STDGUID,STDFULLNAME,STDREGISTRATION,CURGUID,CURNAME,SBJGUID,SBJNAME,BLTPERIOD,BLTTYPE,BLTEVALACTIVITY1,BLTEVALACTIVITY2,BLTEVALACTIVITY3,BLTEVALACTIVITYEND,BLTSTATUS,BLTDELIVERYDATE,CREATEDON) VALUES
-(
+INSERT INTO dbapi.bulletins(GUID,STDGUID,STDFULLNAME,STDREGISTRATION,CURGUID,CURNAME,SBJGUID,SBJNAME,BLTPERIOD,BLTTYPE,BLTEVALACTIVITY1,BLTEVALACTIVITY2,BLTEVALACTIVITY3,BLTEVALACTIVITYEND,BLTSTATUS,BLTDELIVERYDATE,CREATEDON) VALUES
+(--OK
     'f4d7463d-173a-4931-a9ad-4d2a6f616c7e',
     '724006ad-24f5-46fa-bd9c-fcb1d4f16cab','Henrique Batista Liduario','RA000001',
     'f6ed78e4-e6bc-476b-bbf7-699cc0c86456','MBA Executivo em Segurança Cibernética',
     '82854048-ebe6-4b08-a1ee-bfa30b9224f8','Auditoria em Ambientes Cibernéticos',
-    '07/08/22 à 06/09/22',
-    'PRR',
-    '50.00','50.00',NULL,NULL,
+    '07/08/22 até 06/09/22',
+    3,
+    50,50,0,0,
     2,
     DATE_ADD(NOW(), INTERVAL -31 DAY),
     NOW()
-)
+),
+(--OK
+    '27d29286-4d75-43b8-a82b-975be634c597',
+    '724006ad-24f5-46fa-bd9c-fcb1d4f16cab','Henrique Batista Liduario','RA000001',
+    'f6ed78e4-e6bc-476b-bbf7-699cc0c86456','MBA Executivo em Segurança Cibernética',
+    '3d53c09f-19b4-43f9-bc45-395fe4dba21b','A Defesa Cibernética no Contexto Atual',
+    '03/01/22 até 01/02/22',
+    1,
+    20,10,20,45,
+    2,
+    DATE_ADD(NOW(), INTERVAL -60 DAY),
+    NOW()
+), 
+(--OK
+    'aee47182-7ddc-4337-9bb4-98a3b279b3a5',
+    '724006ad-24f5-46fa-bd9c-fcb1d4f16cab','Henrique Batista Liduario','RA000001',
+    'f6ed78e4-e6bc-476b-bbf7-699cc0c86456','MBA Executivo em Segurança Cibernética',
+    '82854048-ebe6-4b08-a1ee-bfa30b9224f8','Auditoria em Ambientes Cibernéticos',
+    '03/08/21 até 11/09/21',
+    1,
+    15,4,20,30,
+    3,
+    DATE_ADD(NOW(), INTERVAL -360 DAY),
+    NOW()
+),  
+(--OK
+    '908dd520-d5af-4786-8175-b870b7900cbb',
+    '724006ad-24f5-46fa-bd9c-fcb1d4f16cab','Henrique Batista Liduario','RA000001',
+    'f6ed78e4-e6bc-476b-bbf7-699cc0c86456','MBA Executivo em Segurança Cibernética',
+    'd876ca15-31df-4397-9ba3-d5205c694939','Criminalística e Legislação Cibernética',
+    '03/12/21 até 27/01/22',
+    1,
+    19,9,19,25,
+    2,
+    DATE_ADD(NOW(), INTERVAL -121 DAY),
+    NOW()
+),  
+(--OK
+    '40f9d60a-f022-4fba-9a89-056d2137cc81',
+    '724006ad-24f5-46fa-bd9c-fcb1d4f16cab','Henrique Batista Liduario','RA000001',
+    'f6ed78e4-e6bc-476b-bbf7-699cc0c86456','MBA Executivo em Segurança Cibernética',
+    'b038e059-455d-46fd-969e-62f27cb94e39','Desenvolvimento Profissional',
+    '29/03/21 até 06/05/21',
+    1,
+    50,50,0,0,
+    2,
+    DATE_ADD(NOW(), INTERVAL -152 DAY),
+    NOW()
+),  
+(--OK
+    '13070c5b-e818-4284-8a73-1de1515943b8',
+    '724006ad-24f5-46fa-bd9c-fcb1d4f16cab','Henrique Batista Liduario','RA000001',
+    'f6ed78e4-e6bc-476b-bbf7-699cc0c86456','MBA Executivo em Segurança Cibernética',
+    'fba2d88d-578a-44a8-863c-e34e0f05e6ec','Direção e Planejamento Estratégico',
+    '03/09/21 até 01/10/21',
+    1,
+    18,10,19,50,
+    2,
+    DATE_ADD(NOW(), INTERVAL -180 DAY),
+    NOW()
+),
+(--OK
+    '05a3e3c6-0c6c-41b3-94fb-5962ebd5d159',
+    '724006ad-24f5-46fa-bd9c-fcb1d4f16cab','Henrique Batista Liduario','RA000001',
+    'f6ed78e4-e6bc-476b-bbf7-699cc0c86456','MBA Executivo em Segurança Cibernética',
+    '3f89bc51-b8b8-461a-92b5-a8c88091cb3f','Gestão e Segurança de Redes'
+    '03/10/21 até 08/11/21',
+    1,
+    15,10,10,40,
+    2,
+    DATE_ADD(NOW(), INTERVAL -211 DAY),
+    NOW()
+),
+(--OK
+    '5b734a54-1d46-4fab-9c18-a0e1bcf1e095',
+    '724006ad-24f5-46fa-bd9c-fcb1d4f16cab','Henrique Batista Liduario','RA000001',
+    'f6ed78e4-e6bc-476b-bbf7-699cc0c86456','MBA Executivo em Segurança Cibernética',
+    '032cb7e4-6e27-44e6-bbbb-f0f5acf1c2cf','Gestão Estratégica de Recursos Humanos',
+    '03/11/21 até 01/12/21',
+    1,
+    20,10,20,35,
+    2,
+    DATE_ADD(NOW(), INTERVAL -242 DAY),
+    NOW()
+),
+(--OK
+    '44003f87-72df-41c0-969e-567641485d93',
+    '724006ad-24f5-46fa-bd9c-fcb1d4f16cab','Henrique Batista Liduario','RA000001',
+    'f6ed78e4-e6bc-476b-bbf7-699cc0c86456','MBA Executivo em Segurança Cibernética',
+    'f318cd36-134e-4ff7-8991-83666d57e1d6','Governança e Gestão de Riscos',
+    '03/11/21 até 01/12/21',
+    1,
+    5,5,8,35,
+    3,
+    DATE_ADD(NOW(), INTERVAL -271 DAY),
+    NOW()
+),
+(--OK
+    'edf9b8e8-2a97-495e-b882-d288d0457f2b',
+    '724006ad-24f5-46fa-bd9c-fcb1d4f16cab','Henrique Batista Liduario','RA000001',
+    'f6ed78e4-e6bc-476b-bbf7-699cc0c86456','MBA Executivo em Segurança Cibernética',
+    'f318cd36-134e-4ff7-8991-83666d57e1d6','Governança e Gestão de Riscos',
+    '07/02/22 até 09/03/22',
+    3,
+    50,50,0,0
+    2,
+    DATE_ADD(NOW(), INTERVAL -271 DAY),
+    NOW()
+),
+(--OK
+    '94b4bb5f-8432-4461-8666-33050263313a',
+    '724006ad-24f5-46fa-bd9c-fcb1d4f16cab','Henrique Batista Liduario','RA000001',
+    'f6ed78e4-e6bc-476b-bbf7-699cc0c86456','MBA Executivo em Segurança Cibernética',
+    '7cade2e8-2d16-49ea-bc71-dc0c26190ce7','Políticas, Gestão de Segurança da Informação e da Continuidade de Negócios',
+    '03/05/21 até 01/06/21',
+    1,
+    20,10,20,45,
+    2,
+    DATE_ADD(NOW(), INTERVAL -315 DAY),
+    NOW()
+),
+(
+    'a53285c5-2afc-41f4-a1ad-96e66badd1cf',
+    '724006ad-24f5-46fa-bd9c-fcb1d4f16cab','Henrique Batista Liduario','RA000001',
+    'f6ed78e4-e6bc-476b-bbf7-699cc0c86456','MBA Executivo em Segurança Cibernética',
+    'd9d1c020-a4fd-4f76-8351-cb605391dbe7','Sistemas Criptográficos, Biométricos, Direito Digital e Responsabilidade Civil na Questão da Monitoração Eletrônica',
+    '03/07/21 até 01/08/21',
+    1,
+    0,0,0,0,
+    3,
+    DATE_ADD(NOW(), INTERVAL -344 DAY),
+    NOW()
+),
+(
+    '614c9e42-0b9e-48f3-816d-8892e6012cc2',
+    '724006ad-24f5-46fa-bd9c-fcb1d4f16cab','Henrique Batista Liduario','RA000001',
+    'f6ed78e4-e6bc-476b-bbf7-699cc0c86456','MBA Executivo em Segurança Cibernética',
+    'd9d1c020-a4fd-4f76-8351-cb605391dbe7','Sistemas Criptográficos, Biométricos, Direito Digital e Responsabilidade Civil na Questão da Monitoração Eletrônica',
+    '01/06/22 até 01/07/22',
+    3,
+    40,50,0,0,
+    2,
+    DATE_ADD(NOW(), INTERVAL -70 DAY),
+    NOW()
+);

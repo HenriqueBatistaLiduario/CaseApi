@@ -1,4 +1,4 @@
-INSERT INTO dbcaseapi.subjects(GUID,SBJNAME,SBJTYPE,SBJSUBTYPE,SBJMODALITY,SBJWORKLOAD,CREATEDON) VALUES
+INSERT INTO dbapi.subjects(GUID,SBJNAME,SBJTYPE,SBJSUBTYPE,SBJMODALITY,SBJWORKLOAD,CREATEDON) VALUES
 ('3d53c09f-19b4-43f9-bc45-395fe4dba21b','A Defesa Cibernética no Contexto Atual',2,NULL,1,40,NOW()),
 ('82854048-ebe6-4b08-a1ee-bfa30b9224f8','Auditoria em Ambientes Cibernéticos',2,NULL,1,40,NOW()),
 ('d876ca15-31df-4397-9ba3-d5205c694939','Criminalística e Legislação Cibernética',2,NULL,1,40,NOW()),

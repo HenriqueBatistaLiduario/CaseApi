@@ -1,4 +1,4 @@
-INSERT INTO dbcaseapi.subjects_courses(GUID,CURGUID,SBJGUID,CREATEDON) VALUES
+INSERT INTO dbapi.subjects_courses(GUID,CURGUID,SBJGUID,CREATEDON) VALUES
 ('a3b05f35-782a-4bb4-80cd-9dac99ff0fda','f6ed78e4-e6bc-476b-bbf7-699cc0c86456','3d53c09f-19b4-43f9-bc45-395fe4dba21b',NOW()), 
 ('95ce9597-82da-4a8f-aae0-637f886aee45','f6ed78e4-e6bc-476b-bbf7-699cc0c86456','82854048-ebe6-4b08-a1ee-bfa30b9224f8',NOW()),
 ('8710f4a3-2506-4995-92a3-5b5e54f7fa26','f6ed78e4-e6bc-476b-bbf7-699cc0c86456','d876ca15-31df-4397-9ba3-d5205c694939',NOW()),
