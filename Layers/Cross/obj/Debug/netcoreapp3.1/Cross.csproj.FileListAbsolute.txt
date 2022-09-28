@@ -1,0 +1,16 @@
+C:\Projects\Deloitte\Api\layers\Cross\bin\Debug\netcoreapp3.1\Cross.deps.json
+C:\Projects\Deloitte\Api\layers\Cross\bin\Debug\netcoreapp3.1\Cross.dll
+C:\Projects\Deloitte\Api\layers\Cross\bin\Debug\netcoreapp3.1\Cross.pdb
+C:\Projects\Deloitte\Api\layers\Cross\bin\Debug\netcoreapp3.1\Data.dll
+C:\Projects\Deloitte\Api\layers\Cross\bin\Debug\netcoreapp3.1\Domain.dll
+C:\Projects\Deloitte\Api\layers\Cross\bin\Debug\netcoreapp3.1\Service.dll
+C:\Projects\Deloitte\Api\layers\Cross\bin\Debug\netcoreapp3.1\Domain.pdb
+C:\Projects\Deloitte\Api\layers\Cross\bin\Debug\netcoreapp3.1\Service.pdb
+C:\Projects\Deloitte\Api\layers\Cross\bin\Debug\netcoreapp3.1\Data.pdb
+C:\Projects\Deloitte\Api\layers\Cross\obj\Debug\netcoreapp3.1\Cross.csprojAssemblyReference.cache
+C:\Projects\Deloitte\Api\layers\Cross\obj\Debug\netcoreapp3.1\Cross.csproj.CoreCompileInputs.cache
+C:\Projects\Deloitte\Api\layers\Cross\obj\Debug\netcoreapp3.1\Cross.AssemblyInfoInputs.cache
+C:\Projects\Deloitte\Api\layers\Cross\obj\Debug\netcoreapp3.1\Cross.AssemblyInfo.cs
+C:\Projects\Deloitte\Api\layers\Cross\obj\Debug\netcoreapp3.1\Cross.csproj.CopyComplete
+C:\Projects\Deloitte\Api\layers\Cross\obj\Debug\netcoreapp3.1\Cross.dll
+C:\Projects\Deloitte\Api\layers\Cross\obj\Debug\netcoreapp3.1\Cross.pdb
