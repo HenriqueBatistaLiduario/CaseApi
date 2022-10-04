@@ -86,12 +86,12 @@ namespace Application
                     Version = "v1",
                     Title = "Deloitte. | Processo seletivo - Case de Henrique Batista",
                     Description = "API Rest utilizando o Framework .NET 5.0 (C#), considerando os requisitos solicitados pela Deloitte ao candidato.",
-                    TermsOfService = new Uri("http://github.com"),
+                    // TermsOfService = new Uri("https://github.com"),
                     Contact = new Microsoft.OpenApi.Models.OpenApiContact
                     {
                         Name = "Henrique Batista Liduario",
                         Email = "henrique.liduario@hotmail.com",
-                        Url = new Uri("www.linkedin.com/in/henriqueliduario"),
+                        Url = new Uri("https://www.linkedin.com/in/henriqueliduario"),
                     },
                     License = new Microsoft.OpenApi.Models.OpenApiLicense
                     {
